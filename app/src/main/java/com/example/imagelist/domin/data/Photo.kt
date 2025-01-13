@@ -1,0 +1,31 @@
+package com.example.imagelist.domin.data
+
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Photo(
+    @SerialName("alt")
+    val alt: String,
+    @SerialName("avg_color")
+    val avgColor: String,
+    @SerialName("height")
+    val height: Int,
+    @SerialName("id")
+    val id: Int,
+    @SerialName("liked")
+    val liked: Boolean,
+    @SerialName("photographer")
+    val photographer: String,
+    @SerialName("photographer_id")
+    val photographerId: Long,
+    @SerialName("photographer_url")
+    val photographerUrl: String,
+    @SerialName("url")
+    val url: String,
+    @SerialName("width")
+    val width: Int,
+    @SerialName("src")
+    val src: Src
+)
